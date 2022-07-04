@@ -44,7 +44,7 @@ Structure
    
 ```
 
-More information regarding the dataset can be found under datasheet.md.
+More information regarding the dataset can be found in the [datasheet](./datasheet.md).
 
 ## Citation
 
