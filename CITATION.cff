@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it using these metadata."
+authors:
+- family-names: "Nethil"
+  given-names: "Kumarmanas"
+- family-names: "Thatipelli"
+  given-names: "Anirudh"
+- family-names: "Kumar"
+  given-names: "Sachin"
+
+title: "Phone Number Entity Dataset"
+abstract : "This dataset contains the data of two speakers speaking out 75 phone numbers each, in Indian English."
+type: dataset
+keywords:
+  - "phone number entity"
+  - "entity capture"
+  - "ASR"
+  - "Spoken Dialog Systems"
+version: 1.0.0
+date-released: 2022-07-04
+url: "https://github.com/skit-ai/phone-number-entity-dataset"
+license: CC BY-NC 4.0
