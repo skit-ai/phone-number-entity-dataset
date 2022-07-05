@@ -6,7 +6,7 @@ This is inspired from the [Datasheets for datasets](https://arxiv.org/pdf/1803.0
 
 Q1) For what purpose was the dataset created ? Was there a specific task in mind ? Was there a specific gap that needed to be filled ?
 
-Ans. These are evaluation datasets for the task of capturing phone number sequences - both in one go and across successive utterances (or chunking of the phone number). There are no datasets we know of that attempt to study this problem, and this is supposed to fill the gap.
+Ans. This is an evaluation dataset for the task of capturing phone number sequences. There are two tracks - in one utterance and across successive utterances (or chunking of the phone number). There are no datasets we know of that attempt to study this problem, and this is supposed to fill the gap.
 
 Q2) Who created the dataset and on behalf of which entity ?
 
@@ -21,12 +21,12 @@ Ans. Skit funded the creation of this dataset.
 Q4) What do the instances that comprise the dataset consist of ?
 
 Ans. Individual instances of the dataset consist of the following fields: `call_id`,`turn_id`, `relative_path`, `tag` and `speaker_id`. 
-For dataset 1, The `relative_path` points to the audio file contains a speaker speaking a phone number, ``speaker_id`` refers to the speaker speaking the phone number, the ``turn_id`` refers to the turn and the `tag` is the phone number.
-For dataset 2, The `relative_path` points to the audio file contains a speaker speaking a phone number,``speaker_id`` refers to the speaker speaking the phone number, the ``turn_id`` refers to the turn, the `tag` is the phone number.
+For teack 1, The `relative_path` points to the audio file contains a speaker speaking a phone number, ``speaker_id`` refers to the speaker speaking the phone number, the ``turn_id`` refers to the turn and the `tag` is the phone number.
+For track 2, The `relative_path` points to the audio file contains a speaker speaking a phone number,``speaker_id`` refers to the speaker speaking the phone number, the ``turn_id`` refers to the turn, the `tag` is the phone number.
 
 Q5) How many instances are there in total (of each type, if appropriate) ?
 
-Ans. There are 146 calls captured across single turns and 142 calls captured across two turns. Each phone number is spoken by two speakers in each dataset.
+Ans. There are 146 calls captured in the `single turn` track and 142 calls captured in the `two turns` track. Each phone number is spoken by two (Indian English) speakers, in each track.
 
 Q6) Does the dataset contain all possible instances or is it a sample (not necessarily random) of instances from a larger set ?
 
@@ -34,7 +34,7 @@ Ans. The dataset contains a sample of Indian phone numbers.
 
 Q7) Are there recommended data splits (e.g., training, development/validation, testing) ?
 
-Ans. No there are no recommended data splits per se. This dataset should be used for testing purposes.
+Ans. No there are no recommended data splits per se. This dataset is meant to be for evaluation purposes, only.
 
 Q8) Are there any errors, sources of noise, or redundancies in the dataset?
 
@@ -70,18 +70,18 @@ Ans. It has been used to benchmark various ASR systems for the task of phone num
 
 Q15) What (other) tasks could the dataset be used for ?
 
-Ans. The `two-turns` dataset can be used to evaluate how system performance is impacted by chunking of phone number entities across turns.
+Ans. The `two-turns` track can be used to evaluate how system performance is impacted by chunking of phone number entities across turns.
 
 ## Distribution and Maintenance
 
 Q16) Will the dataset be distributed under a copyright or other intellectual property (IP) license ?
 
-Ans. This dataset is being distributed under `CC BY NC` license as mentioned in the readme.
+Ans. This dataset is being distributed under a [CC BY NC license](https://creativecommons.org/licenses/by-nc/4.0/).
 
 Q17) Who will be maintaining the dataset ?
 
-Ans. The research team at Skit will be maintaining the dataset. They can be contacted by sending an email at "ml-research@skit.ai".
+Ans. The research team at Skit will be maintaining the dataset. They can be contacted by sending an email to ml-research@skit.ai.
 
 Q18) Will the dataset be updated in the future (e.g., to correct labelling errors, add new instances, delete instances) ?
 
-Ans. Incase there are errors, we will try to collate and share an updated version every 3 months. We may also add more instances to the dataset - to make it more robust.
+Ans. Incase there are errors, we will try to collate and share an updated version every 3 months. We also plan to add more instances and variations to the dataset - to make it more robust.
